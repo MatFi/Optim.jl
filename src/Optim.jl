@@ -36,7 +36,7 @@ using FillArrays             # For handling scalar bounds in Fminbox
 #using Compat                 # for compatibility across multiple julia versions
 
 # for extensions of functions defined in Base.
-import Base: length, push!, show, getindex, setindex!, maximum, minimum
+import Base: length, push!, show, getindex, setindex!, maximum, minimum, Threads.@threads
 
 # objective and constraints types and functions relevant to them.
 import NLSolversBase: NonDifferentiable, OnceDifferentiable, TwiceDifferentiable,
